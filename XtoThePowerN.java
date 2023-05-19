@@ -7,7 +7,7 @@ public class XtoThePowerN {
                 n = -n;
                 x = 1/x;
             }       
-            // double ans = myPow(x*x,n/2);
-        return (n%2==0) ? (double)myPow(x*x,n/2) : x*(double)myPow(x*x,n/2);  
+            double ans = myPow(x*x,n/2);
+        return (n%2==0) ? ans : x*ans;  
         }
 }
